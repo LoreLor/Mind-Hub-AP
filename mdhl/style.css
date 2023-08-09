@@ -1,0 +1,27 @@
+body {
+    margin:0;
+    padding:3rem;
+}
+
+.header-home, .header-about, .header-contact {
+    display: flex;
+    justify-content: start;
+    padding-left: 15%;
+}
+
+.main-home, .main-about, .main-contact {
+    display: flex;
+    justify-content: start;
+    padding-left: 15%;
+}
+
+.about-content {
+    width: 50vw;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    line-height: 2rem;
+}
