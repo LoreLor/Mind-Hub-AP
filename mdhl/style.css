@@ -6,24 +6,26 @@
     --font-color1: #575454;
     --font-color2: #757171;
     --border-color: #e9e7e7;
-
+    --transition: transform 0.5s ease-in;
 }
 
 body {
     font-family:Pangolin;
     letter-spacing: 1px;
-    margin: 0;
     padding: 5px 0;
     background-color: var(--bg-color);
+    max-width: 70vw;
+    margin: 0 auto;
+    
 }
 
 .container {
-    max-width: 70vw;
-    margin: 0 auto;
     padding: 20px;
+    padding-left: 6rem;
     background-color:var(--bg-color2);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    
 }
 
 .header-home, 
@@ -34,7 +36,7 @@ body {
 .main-contact {
     display: flex;
     justify-content: start;
-    padding: 1%;
+    padding: 0.5%;
 }
 
 .image-content img {
@@ -42,28 +44,33 @@ body {
     max-width: 100px;
     border: 2px solid var(--border-color);
     border-radius: 8px;
-    transition: transform 0.5s ease-in
-}
-
-.home-list li {
-    list-style: none;
-}
-
-.home-list span {
-    color: var(--font-color2);
-    font-style: italic;
-}
-
-.home-list p{
-    margin-left:20px;
+    transition: var(--transition)
 }
 
 .image-content img:hover {
     transform: scale(1.1)
 }
 
+.home-list li {
+    list-style: none;
+}
+
+.home-list h4 {
+    color: var(--font-color2);
+    font-style: italic;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.home-list p{
+    margin-left:20px;
+    color: var(--font-color1);
+}
+
+
 .about-content {
     width: 50vw;
+    padding-right: 3rem;
 }
 
 .contact-content {
@@ -81,4 +88,29 @@ h1 {
 h3 {
     font-weight: 700;
     color: var(--font-color1);
+}
+
+p, span {
+    color: var(--font-color2);
+    font-size: 1rem;
+}
+
+nav a {
+    margin-right: 0.5rem;
+    color: var(--font-color3);
+    font-weight: 800;
+    font-size: large;
+    text-decoration: none;
+    border: 1px solid var(--font-color1);
+    padding: 5px 30px;
+    background-color: var(--font-color1);
+    border-radius: 5px;
+    color: var(--bg-color);
+    transition: all 0.5s ease-in;
+}
+
+nav a:hover {
+    color: var(--font-color1);
+    background-color: var(--bg-color);
+    border: 1px solid var(--bg-color);
 }
