@@ -5,6 +5,7 @@
     --bg-color2: white;
     --font-color1: #575454;
     --font-color2: #757171;
+    --font-color3: #484e83;
     --border-color: #e9e7e7;
     --transition: transform 0.5s ease-in;
 }
@@ -113,4 +114,11 @@ nav a:hover {
     color: var(--font-color1);
     background-color: var(--bg-color);
     border: 1px solid var(--bg-color);
+}
+
+.email {
+    color: var(--font-color3);
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
 }
