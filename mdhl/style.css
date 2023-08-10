@@ -4,6 +4,7 @@
     --bg-color: #e9e7e7;
     --bg-color2: white;
     --font-color1: #575454;
+    --font-color2: #757171;
     --border-color: #e9e7e7;
 
 }
@@ -42,6 +43,19 @@ body {
     border: 2px solid var(--border-color);
     border-radius: 8px;
     transition: transform 0.5s ease-in
+}
+
+.home-list li {
+    list-style: none;
+}
+
+.home-list span {
+    color: var(--font-color2);
+    font-style: italic;
+}
+
+.home-list p{
+    margin-left:20px;
 }
 
 .image-content img:hover {
