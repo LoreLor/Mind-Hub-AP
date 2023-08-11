@@ -8,7 +8,7 @@
     --font-color1: #464444;
     --font-color2: #757171;
     --font-color3: #484e83;
-    --font-color4: #0c22e7;
+    --font-color4: #e7e30c;
     --border-color: #e9e7e7;
     --transition: transform 0.5s ease-in;
 }
@@ -36,8 +36,8 @@
 }
 
 .bground {
-    background-image: linear-gradient(#0f0355d2, #71e7eb96),
-        url("../img/design1_image1.jpg");
+    background-image: linear-gradient(#553b03b9, #dfeb7196),
+        url("../img/design1_image2.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -148,9 +148,9 @@ span {
 }
 
 .nav-links a:hover {
-    color: var(--bg-color-light);
+    color: var(--font-color1);
     background-color: var(--font-color4);
-    border: 1px solid var(--bg-color-light);
+    border: 1px solid  var(--font-color4);
 }
 
 /** Home */
