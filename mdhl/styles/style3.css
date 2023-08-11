@@ -215,3 +215,8 @@ span {
     color: var(--bg-color-dark);
     font-size: 1.1rem;
 }
+
+/** Validator - css */
+.validator-css {
+    text-align: center;
+}

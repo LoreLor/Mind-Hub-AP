@@ -53,6 +53,10 @@
     background-color: var(--bg-color-light);
 }
 
+.image-content .logo:hover {
+    transform: scale(1.1);
+}
+
 .subtitle{
     position: absolute;
     bottom: 0;
@@ -95,7 +99,7 @@ p, span {
 /** Navegacion */
 .nav-content {
     width: 20vw;
-    padding-top: 5rem;
+    padding-top: 3rem;
 }
 
 .nav-links{
@@ -131,7 +135,7 @@ p, span {
 /** Home */
 .home-list{
     margin-left: 3rem;
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
 .home-list li {
@@ -181,4 +185,9 @@ p, span {
 .email:hover{
     color: var(--bg-color-dark);
     font-size: 1.1rem;
+}
+
+/** Validator - css */
+.validator-css {
+    text-align: center;
 }
