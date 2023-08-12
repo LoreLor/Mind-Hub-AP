@@ -23,7 +23,7 @@
 
 .container {
     width: 80vw;
-    margin: 5px auto;
+    margin: 0 auto;
 } 
 
 .header-home, .header-about {
@@ -83,6 +83,7 @@ h1 {
     letter-spacing: 2px;
     color: var(--bg-color-light);
     padding: 2rem;
+    text-shadow: -4px 3px 5px #01031a;
 }
 
 h3 {
