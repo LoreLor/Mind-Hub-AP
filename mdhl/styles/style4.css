@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+
+:root {
+    --font: "Pangolin";
+    --gray-color: #585656;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80vw;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/** Rules Page */
+.header-titles {
+    text-align: center;
+    margin: 3rem 0;
+    font-family: var(--font);
+    color: var(--gray-color);
+    letter-spacing: 2px;
+}
