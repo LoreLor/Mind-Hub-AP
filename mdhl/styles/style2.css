@@ -4,7 +4,8 @@
 :root {
     --bg-color-light-gray: #e9e7e7;
     --bg-color-light: white;
-    --bg-color-dark: black;
+    --bg-color-dark: rgb(20, 20, 20);
+    --bg-color-table: #e49c15;
     --font-color1: #464444;
     --font-color2: #757171;
     --font-color3: #484e83;
@@ -16,15 +17,26 @@
 * {
     margin:0;
     padding: 0;
-    font-family:Pangolin;
+    font-family:'Pangolin';
     letter-spacing: 1px;
     box-sizing: border-box;
 }
 
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #f7f1e2;
+}
+
 .container {
-    width: 80vw;
+    width: 85vw;
     margin: 0 auto;
-} 
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
 
 .header-home, .header-about {
     height: 16rem;
@@ -34,7 +46,7 @@
 }
 
 .bground{
-    background-image:linear-gradient(#0f0355d2,#71e7eb96), url('../img/design1_image1.jpg');
+    background-image:linear-gradient(#031255ce,#f0c50896), url('../img/design1_image1.jpg');
     background-size:100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -47,7 +59,7 @@
     bottom: -3rem;
     width: fit-content;
     box-shadow: -10px 13px 15px 1px #000;
-    max-width: 150px;
+    max-width: 8rem;
     border: 2px solid var(--border-color);
     border-radius: 8px;
     transition: var(--transition);
@@ -71,7 +83,9 @@
 
 .main-home, 
 .main-about, 
-.main-contact{
+.main-contact,
+.main-rules, 
+.main-info {
     display: flex;
     padding: 2rem;
     gap: 3rem;
@@ -202,3 +216,80 @@ p, span {
     margin-bottom: 1rem;
 }
 
+/** Rules Page */
+.header-titles {
+    text-align: center;
+    color: var(--font-color1);
+    padding: 10px 0;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+}
+
+.rules {
+    display: flex;
+    flex-direction: column;
+    color: var(--font-color2);
+    font-family: var(--font);
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    gap: 1.8rem;
+}
+
+.rule-item h3 {
+    color: var(--font-color1);
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+.indent-rule p, dt{
+    text-indent: 2rem;
+}
+
+.ordered-list {
+    padding-left: 1rem;
+}
+
+.ordered-list span {
+    font-weight: 600;
+    color: var(--font-color1);
+}
+
+
+.unordered-list {
+    padding-left: 4rem;
+}
+
+.unordered-list li{
+    list-style-type: circle;
+}
+
+/** Game Information */
+.table-content {
+    flex-grow: 1;
+}
+
+table {
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    border-spacing: 0.5rem;
+    border-collapse: separate;
+}
+
+thead {
+    background-color: var(--bg-color-dark);
+    color: var(--bg-color-table);
+}
+tfoot, tbody {
+    background-color: var(--bg-color-table);
+    color: var(--bg-color-dark);
+    
+}
+th, td {
+    width: 26%;
+    vertical-align: center;
+    border: 1px solid var(--bg-color-dark);
+    border-collapse: collapse;
+    padding: 0.3em;
+  
+}
