@@ -285,6 +285,7 @@ p, span {
 /** Game Information */
 .table-content {
     flex: 0.7;
+    flex-grow: 1;
 }
 
 .extra-data {
@@ -298,6 +299,8 @@ p, span {
 }
 
 table {
+    width: 60vw;
+    justify-content: center;
     height: max-content;
     text-align: center;
     border-spacing: 0.2em;
@@ -316,12 +319,20 @@ tfoot, tbody {
 }
 
 th, td {
-    width: 26%;
-    vertical-align: center;
+   
+    vertical-align:center;
     border: 1px solid var(--dark-color);
     border-collapse: collapse;
-    padding: 0.3em;
-  
+}
+
+.map {
+    width: 15vw;
+    height: 20vh;
+    text-align: center;
+    padding-top: 0.2rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    border: none;
 }
 
 .other-info {
