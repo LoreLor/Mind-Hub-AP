@@ -7,6 +7,7 @@
     --font-color2: #757171;
     --white-color: white;
     --dark-color: rgb(20, 20, 20);
+    --candy-transparent: #f5c9068e;
     --blue: #01031a;
     --bg-color-table: #e49c15;
     --light-blue: #484e83;
@@ -45,7 +46,8 @@ body{
 .header-about,
 .header-rules,
 .header-info,
-.header-contact {
+.header-contact, 
+.header-register {
     height: 16rem;
     width:100%;
     display: flex;
@@ -96,7 +98,8 @@ body{
 .main-about, 
 .main-contact,
 .main-rules, 
-.main-info {
+.main-info,
+.main-register {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -166,7 +169,7 @@ p, span {
 
 .nav-links a:hover {
     color: var(--font-color1);
-    background-color: var(--bg-color-table);
+    background-color: var(--candy-transparent);
     border: 1px solid var(--bg-color-table);
 }
 
@@ -251,7 +254,9 @@ p, span {
     flex: 0.7;
 }
 
-.rule-item h3, .extra-data h3 {
+.rule-item h3, 
+.extra-data h3,
+.form-legend h3 {
     color: var(--font-color1);
     padding-bottom: 0.5rem;
 }
@@ -283,12 +288,14 @@ p, span {
 }
 
 /** Game Information */
-.table-content {
+.table-content, 
+.form-content {
     flex: 0.7;
     flex-grow: 1;
 }
 
-.extra-data {
+.extra-data, 
+.form-legend {
     padding-bottom: 1rem;
 }
 
@@ -358,3 +365,130 @@ th, td {
     margin-right: 1rem;
 }
 
+/** Registration Page */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 6vh;
+}
+
+input:focus {
+    outline: none;
+}
+
+label {
+    padding-right: 0.5vw;
+    font-weight: 600;
+    color: var(--font-color2);
+}
+
+select:focus {
+    border: none;
+    border: 2px solid var(--bg-color-table)
+}
+
+.fieldset-personal,
+.fieldset-address,
+.fieldset-position {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1;
+    border: none;
+}
+
+.fieldset-grade,
+.fieldset-gender,
+.fieldset-closest,
+.fieldset-permission {
+    border: none;
+}
+
+
+.fieldset-closest h4, 
+.fieldset-permission h4 {
+    padding-bottom: 2vh;
+}
+
+.fieldset-permission p {
+    padding: 2vh 0;
+}
+
+.column li {
+    list-style-type: none;
+}
+
+.column-left {
+    flex: 0.5;
+    padding-left: 1vw;
+    padding-top: 1vh;
+    margin-top: -2vh;
+}
+
+.column-right {
+    margin-top: -2vh;
+    margin-left: -40vw;
+    flex: 0.5;
+    padding-left: 1vw;
+    padding-top: 1vh;
+}
+
+.input-left {
+    flex: 0.5;
+    width: 15vw;
+    height: 5vh;
+    margin-right: 2vw;
+    margin-top: -2vh;
+    padding-left: 1vw;
+    padding-top: 1vh;
+}
+
+.input-right {
+    width: 15vw;
+    height: 5vh;
+    margin-top: -2vh;
+    flex: 0.5;
+    padding-left: 1vw;
+    padding-top: 1vh;
+}
+
+.input-neutro {
+    flex: 1;
+    width: 40vw;
+    height: 5vh;
+    margin-top: -2vh;
+    padding-left: 1vw;
+    padding-top: 1vh;
+}
+
+.input-radio {
+    width: 3vw;
+    cursor: pointer;
+}
+
+.date {
+    align-items: center;
+    text-align: center;
+    color: var(--font-color2);
+}
+
+.school-select {
+    border: 2px solid var(--bg-color-table);
+    background-color: var(--bg-color-table);
+    color: var(--font-color2);
+    text-align: center;
+    width: 15vw;
+    height: 5vh;
+}
+
+
+.effect {
+    border: none;
+    background-color: var(--tea-color);
+    border-bottom: 2px solid var(--font-color2);
+    transition: var(--transition);
+}
+.effect:hover {
+    border-bottom: 2px solid var(--bg-color-table);
+    background-color: var(--candy-transparent);
+}

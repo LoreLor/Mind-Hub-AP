@@ -8,9 +8,9 @@
     <title>Register - MDHL</title>
 </head>
 <body>
-    <div class="conatiner">
+    <div class="container">
         <!-- Logo - Titulo - Imagen de Fondo-->
-        <header class="header-home bground">
+        <header class="header-register bground">
             <h1>Mighty Ducks Hockey League</h1>
             <figure class="image-content">
                 <a href="index.html">
@@ -18,12 +18,335 @@
                 </a>
             </figure>
             <div class="subtitle">
-                <h3>Register Form</h3>
+                <h3>Registration Form</h3>
             </div>
         </header>
 
         <!-- Register Form -->
+        <main class="main-register">
+            <!-- Navegacion -->
+            <aside class="nav-content">
+                <nav class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About MDHL</a>
+                    <a href="game_info.html">Game Information</a>
+                    <a href="#">Registration</a>
+                    <a href="rules.html">Rules & Policies</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </aside>
 
+            <!-- Registration Form -->
+            <div class="form-content">
+                <div class="form-legend">
+                    <h3>Register</h3>
+                </div>
+                <form action="show_data.html" method="GET">
+                    <!-- Personal Name -->
+                    <fieldset class="fieldset-personal">
+                        <label for="first_name">First Name: </label>
+                        <input 
+                            type="text" 
+                            id="first_name" 
+                            name="first_name"
+                            class="input-left effect"
+                        >
+                        <label for="last_name">Last Name: </label>
+                        <input 
+                            type="text" 
+                            id="last_name" 
+                            name="last_name"
+                            class="input-right effect"
+                        >
+                    </fieldset>
+
+                    <!-- Address -->
+                    <fieldset class="fieldset-address">
+                        <label for="street_address">Street Address: </label>
+                        <input 
+                            type="text" 
+                            id="street_address" 
+                            name="street_addres"
+                            class="input-neutro effect"
+                        >
+                    </fieldset>
+                    <fieldset class="fieldset-address">
+                        <label for="city">City:</label>
+                        <input 
+                            type="text"
+                            id="city"
+                            name="city"
+                            class="input-left effect"
+                    
+                        >
+                        <label for="zip_code">Zip Code:</label>
+                        <input 
+                            type="text"
+                            id="zip_code"
+                            name="zip_code"
+                            class="input-right effect"
+                        >
+                    </fieldset>
+
+                    <!-- Gender - Birth Date -->
+                    <fieldset class="fieldset-gender">
+                        <label for="birth">Birth Date:</label>
+                        <input 
+                            type="date"
+                            name="birth"
+                            id="birth"
+                            class="input-left effect date"
+                        >
+                        <label>Gender:</label>
+                        <label for="female">Female</label>
+                        <input 
+                            type="radio"
+                            name="gender"
+                            id="female"
+                            value="female"
+                            class="input-radio"
+                        >
+                        <label for="male">Male</label>
+                        <input 
+                            type="radio"
+                            name="gender"
+                            id="male"
+                            value="male"
+                            class="input-radio"
+                        >
+                    </fieldset>
+
+                    <!-- Grade -->
+                    <fieldset class="fieldset-grade">
+                        <label>Grade: </label>
+                        <input 
+                            type="radio" 
+                            name="grade" 
+                            id="pre_school"
+                            value="Pre-School"
+                            class="input-radio"
+                        >
+                        <label for="pre_school">Pre-School</label>
+                        
+                        <input 
+                            type="radio"
+                            name="grade"
+                            id="1st"
+                            value="1st"
+                            class="input-radio"
+                        >
+                        <label for="1st">1st</label>
+                    
+                        <input 
+                            type="radio"
+                            name="grade"
+                            id="2nd"
+                            value="2nd"
+                            class="input-radio"
+                        >
+                        <label for="2nd">2nd</label>
+
+                        <input 
+                            type="radio"
+                            name="grade"
+                            id="3nd"
+                            value="3nd"
+                            class="input-radio"
+                        >
+                        <label for="3nd">3nd</label>
+
+                        <input 
+                            type="radio"
+                            name="grade"
+                            id="4th"
+                            value="4th"
+                            class="input-radio"
+                        >
+                        <label for="4th">4th</label>
+
+                        <input 
+                            type="radio"
+                            name="grade"
+                            id="5th"
+                            value="5th"
+                            class="input-radio"
+                        >
+                        <label for="5th">5th</label>                    
+                    </fieldset>
+
+                    <!-- Closest School -->
+                    <fieldset class="fieldset-closest">
+                        <h4>Which elementary school do you leave near?</h4>
+                        <label for="closest_school">Choose School</label>
+                        <select name="closest_school" id="closest_school" class="school-select effect">
+                            <option value="aj">AJ Katzenmaier</option>
+                            <option value="green">Greebay</option>
+                            <option value="yeager">Howard A Yeager</option>
+                            <option value="hart">Marjorie P Hart</option>
+                            <option value="south">North Elementary</option>
+                            <option value="north">South Elementary"</option>
+                        </select>
+                    </fieldset>
+
+                    <!-- Positions -->
+                    <h4>What position(s) do you normally play? (check all that apply)</h4> 
+                    <fieldset class="fieldset-position column">
+                        <div class="column-left">
+                            <ul>
+                                <li>
+                                    <input 
+                                        type="checkbox"
+                                        id="forward"
+                                        name="forward"
+                                        value="Forward"
+                                    >
+                                    <label for="forward">Forward</label>
+                                </li>
+                                <li>
+                                    <input 
+                                        type="checkbox"
+                                        id="defense"
+                                        name="defense"
+                                        value="Defense"
+                                    >
+                                    <label for="defense">Defense</label>
+                                </li>   
+                            </ul> 
+                        </div>
+                        <div class="column-right">
+                            <ul>
+                                <li>
+                                    <input 
+                                        type="checkbox"
+                                        id="midfield"
+                                        name="midfield"
+                                        value="Midfield"
+                                    >
+                                    <label for="midfield">Midfield</label>
+                                </li>
+                                <li>
+                                    <input 
+                                        type="checkbox"
+                                        id="goalkeeper"
+                                        name="goalpeeker"
+                                        value="Goalkeeper"
+                                    >
+                                    <label for="goalkeeper">Goalkeeper<label>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </fieldset>
+
+                    <!-- Uniform -->
+                    <h4>Uniform Size:</h4>
+                    <fieldset class="fieldset-position column">
+                        <div class="column-left">
+                            <ul>
+                                <li>
+                                    <input 
+                                        type="checkbox"
+                                        name="ys"
+                                        id="ys"
+                                        value="Youth Small"
+                                    >
+                                    <label for="ys">Youth Small</label>
+                                </li>
+                                <li>
+                                    <input 
+                                        type="checkbox"
+                                        name="ym"
+                                        id="ym"
+                                        value="Youth Medium"
+                                    >
+                                    <label for="ym">Youth Medium</label>
+                                </li>
+                                <li>
+                                    <input 
+                                        type="checkbox"
+                                        name="yl"
+                                        id="yl"
+                                        value="Youth Large"
+                                    >
+                                    <label for="yl">Youth Large</label>
+                                </li>
+                                <li>
+                                    <input 
+                                        type="checkbox"
+                                        name="samll"
+                                        id="small"
+                                        value="Small"
+                                    >
+                                    <label for="small">Small</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="column-right">
+                            <ul>
+                                <li>
+                                    <input 
+                                        type="checkbox"
+                                        name="medium"
+                                        id="medium"
+                                        value="Medium"
+                                    >
+                                    <label for="medium">Medium</label>
+                                </li>
+                                <li>
+                                    <input 
+                                        type="checkbox"
+                                        name="large"
+                                        id="large"
+                                        value="Large"
+                                    >
+                                    <label for="large">Large</label>
+                                </li>
+                                <li>
+                                    <input 
+                                            type="checkbox"
+                                            name="xlarge"
+                                            id="xlarge"
+                                            value="Extra Large"
+                                        >
+                                        <label for="xlarge">Extra Large</label>
+                                </li>
+                            </ul>
+
+                        </div>
+
+
+
+
+                        
+
+
+                    </fieldset>
+
+                    <!-- Permission -->
+                    <fieldset class="fieldset-permission">
+                        <h4>Permission to Play</h4>
+                        <p>
+                            l, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated with hockey and in consideration for the "League" accepting the registrant for its hockey programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and volunteers,including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant's participation in the programand/orbeing transported to or from MDHL sponsored activities,which transportation
+                            By signing below, I herebyagree andauthorizethe above.ln addition, by signing below, lalso acknowledge that I have read the cancellation policy and agree to its terms.
+                            Parent/GuardianSignature:
+                        </p>
+                        <span>Date:</span>
+                    </fieldset>
+
+                    <!-- Send -->
+                    <input 
+                        type="submit"
+                        name="send"
+                        value="Send"
+                    >
+                </form>
+            </div>
+        </main>
+
+        <!-- Validator -->
+        <footer>
+
+        </footer>
     </div>
 </body>
 </html>
