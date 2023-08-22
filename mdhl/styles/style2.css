@@ -586,6 +586,11 @@ select:focus {
     border-radius: 5px;
 }
 
+.send:hover {
+    background-color: var(--light-gray);
+    color: var(--font-color1)
+}
+
 
 .btn-up .icon-up{
     position: fixed;
