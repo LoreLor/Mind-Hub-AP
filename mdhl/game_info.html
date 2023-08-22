@@ -6,20 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/Logo-Mighty-ducks-01.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/style2.css" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Game Information</title>
 </head>
 
 <body>
     <div class="container">
         <!-- Logo - Titulo - Imagen de Fondo-->
-        <header class="header-info bground">
-            <h1>Mighty Ducks Hockey League</h1>
-            <figure class="image-content">
-                <a href="index.html">
-                    <img src="img/Logo-Mighty-ducks-01.png" alt="MDHL's image" class="logo">
-                </a>
-            </figure>
+        <header class="header-info bground" id="up">
+            <h1 
+                data-aos="fade-down-right"
+                data-aos-duration="2000"
+            >
+                Mighty Ducks Hockey League
+            </h1>
+            <div class="cube-content">
+                <div class="cube">
+                    <img src="img/Logo-Mighty-ducks-01.png" alt="MDHL's image">
+                    <img src="img/Logo-Mighty-ducks-01.png" alt="MDHL's image">
+                    <img src="img/Logo-Mighty-ducks-01.png" alt="MDHL's image">
+                    <img src="img/Logo-Mighty-ducks-01.png" alt="MDHL's image">
+                    <img src="img/Logo-Mighty-ducks-01.png" alt="MDHL's image">
+                    <img src="img/Logo-Mighty-ducks-01.png" alt="MDHL's image">
+                </div>
+            </div>
             <div class="subtitle">
+                <div class="menu-hamb">
+                    <img src="img/menu-hamburguesa.png" alt="menu desplegable" id="menu">
+                </div>
                 <h3>Game Information</h3>
             </div>
         </header>
@@ -31,6 +45,7 @@
                 <nav class="nav-links">
                     <a href="index.html">Home</a>
                     <a href="about.html">About MDHL</a>
+                    <a href="registration.html">Registration</a>
                     <a href="#">Game Information</a>
                     <a href="rules.html">Rules & Policies</a>
                     <a href="contact.html">Contact</a>
@@ -188,6 +203,7 @@
                         </tr>
                     </tbody>
                 </table>
+
                 <!-- Other data -->
                 <div class="other-info">
                     <div class="info-a">
@@ -197,10 +213,18 @@
                         <p><span>Please direct all questions to: </span>Michael Randall, Leage Coordinator</p>
                     </div>
                     <div class="info-b">
-                        <p><span>Phone:</span>(630) 680-8132 </p>
-                        <p><span>Email:</span>michael.randall@chihockey.org</p>
+                        <p><span>Phone: <a href="tel:+(630)680-8132" class="email"> (630) 680-8132 </a></span></p>
+                        <p><span>Email: <a href="mailto:michael.randall@chihockey.org" class="email">michael.randall@chihockey.org</a></span></p>
                     </div>
                 </div>
+            </div>
+
+            <!-- Go up -->
+            <!-- Go up -->
+            <div class="btn-up">
+                <a href="#up">
+                    <img src="img/flecha-arriba.png" alt="arrow up"  class="icon-up">
+                </a>
             </div>
         </main>
 
@@ -212,6 +236,11 @@
             </p>
         </footer>
     </div>
+
+    <!-- Script p/desplegar menu -->
+    <script src="toggle.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init()</script>
 </body>
 
 </html>
