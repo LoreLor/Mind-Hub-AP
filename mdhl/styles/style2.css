@@ -60,10 +60,11 @@ body{
 
 .bground{
     background-image:linear-gradient(#031255ce,#f0c50896), url('../img/design1_image1.jpg');
-    background-size:100% 100%;
+    /* background-size:100% 100%; */
     background-repeat: no-repeat;
     background-position: center;
     background-blend-mode:multiply;
+    object-fit: cover;
 }
 
 .cube-content {
