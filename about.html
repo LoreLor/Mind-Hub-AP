@@ -11,12 +11,27 @@
 <body>
     <div class="container">
         <!-- Logo - Titulo - Imagen de Fondo-->
-        <header class="header-about bground">
-            <h1>Mighty Ducks Hockey League</h1>
-            <figure class="image-content">
-                <img src="img/Logo-Mighty-ducks-01.png" alt="MDHL's image" class="logo">
-            </figure>
+        <header class="header-about bground" id="up">
+            <h1 
+                data-aos="fade-down-right"
+                data-aos-duration="2000"
+            >
+                Mighty Ducks Hockey League
+            </h1>
+            <div class="cube-content">
+                <div class="cube">
+                    <img src="img/Logo-Mighty-ducks-01.png" alt="MDHL's image">
+                    <img src="img/Logo-Mighty-ducks-01.png" alt="MDHL's image">
+                    <img src="img/Logo-Mighty-ducks-01.png" alt="MDHL's image">
+                    <img src="img/Logo-Mighty-ducks-01.png" alt="MDHL's image">
+                    <img src="img/Logo-Mighty-ducks-01.png" alt="MDHL's image">
+                    <img src="img/Logo-Mighty-ducks-01.png" alt="MDHL's image">
+                </div>
+            </div>
             <div class="subtitle">
+                <div class="menu-hamb">
+                    <img src="img/menu-hamburguesa.png" alt="menu desplegable" id="menu">
+                </div>
                 <h3>About MDHL</h3>
             </div>
         </header>
@@ -28,6 +43,7 @@
                 <nav class="nav-links">
                     <a href="index.html">Home</a>
                     <a href="#">About MDHL</a>
+                    <a href="registration.html">Registration</a>
                     <a href="game_info.html">Game Information</a>
                     <a href="rules.html">Rules & Policies</a>
                     <a href="contact.html">Contact</a>
@@ -53,6 +69,13 @@
                         parents and previous league members.
                     </p>
             </div>
+
+            <!-- Go up -->
+            <div class="btn-up">
+                <a href="#up">
+                    <img src="img/flecha-arriba.png" alt="arrow up"  class="icon-up">
+                </a>
+            </div>
         </main>
         
         <!-- Validator -->
@@ -65,5 +88,9 @@
         </footer>
     </div>
 
+    <!-- Script p/desplegar menu -->
+    <script src="toggle.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init()</script>
 </body>
 </html>

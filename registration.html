@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=R, initial-scale=1.0">
+    <link rel="icon" href="./img/Logo-Mighty-ducks-01.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style2.css" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Register - MDHL</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo - Titulo - Imagen de Fondo-->
+        <header class="header-register bground" id="up">
+            <h1 
+                data-aos="fade-down-right"
+                data-aos-duration="2000"
+            >
+                Mighty Ducks Hockey League
+            </h1>
+            <div class="cube-content">
+                <div class="cube">
+                    <img src="img/Logo-Mighty-ducks-01.png" alt="MDHL's image">
+                    <img src="img/Logo-Mighty-ducks-01.png" alt="MDHL's image">
+                    <img src="img/Logo-Mighty-ducks-01.png" alt="MDHL's image">
+                    <img src="img/Logo-Mighty-ducks-01.png" alt="MDHL's image">
+                    <img src="img/Logo-Mighty-ducks-01.png" alt="MDHL's image">
+                    <img src="img/Logo-Mighty-ducks-01.png" alt="MDHL's image">
+                </div>
+            </div>
+            <div class="subtitle">
+                <div class="menu-hamb">
+                    <img src="img/menu-hamburguesa.png" alt="menu desplegable" id="menu">
+                </div>
+                <h3>Registration Form</h3>
+            </div>
+        </header>
+
+        <!-- Register Form -->
+        <main class="main-register">
+            <!-- Navegacion -->
+            <aside class="nav-content">
+                <nav class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About MDHL</a>
+                    <a href="#">Registration</a>
+                    <a href="game_info.html">Game Information</a>
+                    <a href="rules.html">Rules & Policies</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </aside>
+
+            <!-- Registration Form -->
+            <div class="form-content">
+                <div class="form-legend">
+                    <h3>Register</h3>
+                </div>
+                <form action="show_data.html" method="GET">
+                    <!-- Personal Name -->
+                    <fieldset class="fieldset-personal">
+                        <label for="first_name">First Name: </label>
+                        <input 
+                            type="text" 
+                            id="first_name" 
+                            name="first_name"
+                            class="input-left effect"
+                        >
+                        <label for="last_name">Last Name: </label>
+                        <input 
+                            type="text" 
+                            id="last_name" 
+                            name="last_name"
+                            class="input-right effect"
+                        >
+                    </fieldset>
+
+                    <!-- Address -->
+                    <fieldset class="fieldset-address">
+                        <label for="street_address">Street Address: </label>
+                        <input 
+                            type="text" 
+                            id="street_address" 
+                            name="street_addres"
+                            class="input-neutro effect"
+                        >
+                    </fieldset>
+                    <fieldset class="fieldset-address">
+                        <label for="city">City:</label>
+                        <input 
+                            type="text"
+                            id="city"
+                            name="city"
+                            class="input-left effect"
+                    
+                        >
+                        <label for="zip_code">Zip Code:</label>
+                        <input 
+                            type="text"
+                            id="zip_code"
+                            name="zip_code"
+                            class="input-right effect"
+                        >
+                    </fieldset>
+
+                    <!-- Gender - Birth Date -->
+                    <fieldset class="fieldset-gender">
+                        <label for="birth">Birth Date:</label>
+                        <input 
+                            type="date"
+                            name="birth"
+                            id="birth"
+                            class="input-left effect date"
+                        >
+                        <label>Gender:</label>
+                        <label for="female">Female</label>
+                        <input 
+                            type="radio"
+                            name="gender"
+                            id="female"
+                            value="female"
+                            class="input-radio"
+                        >
+                        <label for="male">Male</label>
+                        <input 
+                            type="radio"
+                            name="gender"
+                            id="male"
+                            value="male"
+                            class="input-radio"
+                        >
+                    </fieldset>
+
+                    <!-- Grade -->
+                    <fieldset class="fieldset-grade">
+                        <label>Grade: </label>
+                        <input 
+                            type="radio" 
+                            name="grade" 
+                            id="pre_school"
+                            value="Pre-School"
+                            class="input-radio"
+                        >
+                        <label for="pre_school">Pre-School</label>
+                        
+                        <input 
+                            type="radio"
+                            name="grade"
+                            id="1st"
+                            value="1st"
+                            class="input-radio"
+                        >
+                        <label for="1st">1<sup>st</sup></label>
+                    
+                        <input 
+                            type="radio"
+                            name="grade"
+                            id="2nd"
+                            value="2nd"
+                            class="input-radio"
+                        >
+                        <label for="2nd">2<sup>nd</sup></label>
+
+                        <input 
+                            type="radio"
+                            name="grade"
+                            id="3nd"
+                            value="3nd"
+                            class="input-radio"
+                        >
+                        <label for="3nd">3<sup>nd</sup></label>
+
+                        <input 
+                            type="radio"
+                            name="grade"
+                            id="4th"
+                            value="4th"
+                            class="input-radio"
+                        >
+                        <label for="4th">4<sup>th</sup></label>
+
+                        <input 
+                            type="radio"
+                            name="grade"
+                            id="5th"
+                            value="5th"
+                            class="input-radio"
+                        >
+                        <label for="5th">5<sup>th</sup></label>                    
+                    </fieldset>
+
+                    <!-- Closest School -->
+                    <fieldset class="fieldset-closest">
+                        <h4>Which elementary school do you leave near?</h4>
+                        <label for="closest_school">Choose School</label>
+                        <select name="closest_school" id="closest_school" class="school-select effect">
+                            <option value="aj">AJ Katzenmaier</option>
+                            <option value="green">Greebay</option>
+                            <option value="yeager">Howard A Yeager</option>
+                            <option value="hart">Marjorie P Hart</option>
+                            <option value="south">North Elementary</option>
+                            <option value="north">South Elementary"</option>
+                        </select>
+                    </fieldset>
+
+                    <!-- Positions -->
+                    <h4>What position(s) do you normally play? (check all that apply)</h4> 
+                    <fieldset class="fieldset-position column">
+                        <div class="column-left">
+                            <ul>
+                                <li>
+                                    <input 
+                                        type="checkbox"
+                                        id="forward"
+                                        name="forward"
+                                        value="Forward"
+                                    >
+                                    <label for="forward">Forward</label>
+                                </li>
+                                <li>
+                                    <input 
+                                        type="checkbox"
+                                        id="defense"
+                                        name="defense"
+                                        value="Defense"
+                                    >
+                                    <label for="defense">Defense</label>
+                                </li>   
+                            </ul> 
+                        </div>
+                        <div class="column-right">
+                            <ul>
+                                <li>
+                                    <input 
+                                        type="checkbox"
+                                        id="midfield"
+                                        name="midfield"
+                                        value="Midfield"
+                                    >
+                                    <label for="midfield">Midfield</label>
+                                </li>
+                                <li>
+                                    <input 
+                                        type="checkbox"
+                                        id="goalkeeper"
+                                        name="goalpeeker"
+                                        value="Goalkeeper"
+                                    >
+                                    <label for="goalkeeper">Goalkeeper<label>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </fieldset>
+
+                    <!-- Uniform -->
+                    <h4>Uniform Size:</h4>
+                    <fieldset class="fieldset-position column">
+                        <div class="column-left">
+                            <ul>
+                                <li>
+                                    <input 
+                                        type="checkbox"
+                                        name="ys"
+                                        id="ys"
+                                        value="Youth Small"
+                                    >
+                                    <label for="ys">Youth Small</label>
+                                </li>
+                                <li>
+                                    <input 
+                                        type="checkbox"
+                                        name="ym"
+                                        id="ym"
+                                        value="Youth Medium"
+                                    >
+                                    <label for="ym">Youth Medium</label>
+                                </li>
+                                <li>
+                                    <input 
+                                        type="checkbox"
+                                        name="yl"
+                                        id="yl"
+                                        value="Youth Large"
+                                    >
+                                    <label for="yl">Youth Large</label>
+                                </li>
+                                <li>
+                                    <input 
+                                        type="checkbox"
+                                        name="samll"
+                                        id="small"
+                                        value="Small"
+                                    >
+                                    <label for="small">Small</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="column-right">
+                            <ul>
+                                <li>
+                                    <input 
+                                        type="checkbox"
+                                        name="medium"
+                                        id="medium"
+                                        value="Medium"
+                                    >
+                                    <label for="medium">Medium</label>
+                                </li>
+                                <li>
+                                    <input 
+                                        type="checkbox"
+                                        name="large"
+                                        id="large"
+                                        value="Large"
+                                    >
+                                    <label for="large">Large</label>
+                                </li>
+                                <li>
+                                    <input 
+                                            type="checkbox"
+                                            name="xlarge"
+                                            id="xlarge"
+                                            value="Extra Large"
+                                        >
+                                        <label for="xlarge">Extra Large</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </fieldset>
+
+                    <!-- Permission -->
+                    <fieldset class="fieldset-permission">
+                        <h4>Permission to Play</h4>
+                        <p>
+                            l, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated with hockey and in consideration for the "League" accepting the registrant for its hockey programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and volunteers,including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant's participation in the programand/orbeing transported to or from MDHL sponsored activities,which transportation
+                            By signing below, I herebyagree andauthorizethe above.ln addition, by signing below, lalso acknowledge that I have read the cancellation policy and agree to its terms.
+                            Parent/GuardianSignature:
+                        </p>
+                        <span>Date:</span>
+                    </fieldset>
+
+                    <!-- Send -->
+                    <input 
+                        type="submit"
+                        name="send"
+                        value="Send"
+                        class="send"
+                    >
+                </form>
+            </div>
+
+            <!-- Go up -->
+            <div class="btn-up">
+                <a href="#up">
+                    <img src="img/flecha-arriba.png" alt="arrow up"  class="icon-up">
+                </a>
+            </div>
+        </main>
+
+        <!-- Validator -->
+        <footer>
+            <p class="validator-css">
+                <img style="border:0;width:6vw;height:3vh" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="¡CSS Válido!">
+            </p>
+        </footer>
+    </div>
+
+    <!-- Script p/desplegar menu -->
+    <script src="toggle.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script> AOS.init()</script>
+</body>
+</html>
